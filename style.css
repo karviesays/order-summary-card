@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary */
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*, *:before, *:after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    background: url(/images/pattern-background-mobile.svg)no-repeat top center;
+    background-size: 100%;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    max-width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--very-pale-blue);
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.order-summary {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: .95rem;
+}
+
+.order-summary h1 {
+    margin-top: 1rem;
+}
+
+.order-summary p {
+    color: var(--desaturated-blue);
+}
+
+.music-icon {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 2rem;
+}
+
+.pricing-plan {
+    display: flex;
+    align-items: center;
+    background:hsl(227, 56%, 94%);
+    margin: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pricing-plan p {
+    color: var(--desaturated-blue);
+}
+
+
+.change {
+    margin-left: auto;
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.change:hover {
+    color:hsl(245, 75%, 58%);
+}
+
+.buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+}
+
+.btn-payment {
+    width: 90%;
+    background: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 1px 15px 29px -12px #3829E0;
+}
+
+.btn-cancelorder {
+    margin: 1.5rem 0;
+    font-weight: 900;
+    font-size: .95rem;
+    color:var(--desaturated-blue);
+}
+
+.btn-payment:hover{
+    background: hsl(245, 75%, 58%);
+}
+
+.btn-cancelorder:hover{
+    color: var(--dark-blue);
+}
+
+.btn:active {
+    cursor: pointer;
+}
+
+.attribution {
+    margin: 2rem 0;
+}
+
+@media (min-width:1440px) {
+   
+    body {
+        background: url('/images/pattern-background-desktop.svg')no-repeat top center;
+        background-size: 100%;
+        background-color: var(--pale-blue);
+    }
+
+    .change {
+        text-decoration: none;
+    }
+}
